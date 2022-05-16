@@ -1,4 +1,4 @@
-## const, let
+# const, let
 
 ### 기존 var의 단점
 * 변수 중복 선언이 가능하여, 예기치 못한 값을 반환할 수 있다.
@@ -58,9 +58,13 @@ console.log(b); //1
 ```
 
 ### 변수 호이스팅
-<span style="background-color: #ffdce0;">let</span>으로 선언한 변수는 **선언 단계와 초기화 단계가 분리**되어 진행된다.   
-런타임 이전에 자바스크립트 엔진에 의해 선언 단계가 실행되지만,   
-초기화 단계가 실행되지 않았을 때 해당 변수에 접근하려고 하면 참조 에러가 뜬다.   
+**변수의 생성 단계: 선언 > 초기화 > 할당**
+호이스팅(Hoisting)이란, var 선언문이나 function 선언문 등을 해당 스코프의 선두로 옮긴 것처럼 동작하는 특성을 말한다.   
+var로 선언된 변수는 선언 단계와 초기화 단계가 한번에 이루어진다.
+   
+하지만, <span style="background-color: #ffdce0;">let</span>으로 선언한 변수는   
+선언 단계와 초기화 단계가 분리되어 진행되고,   
+초기화 단계가 실행되지 않았을 때 해당 변수에 접근하려고 하면 참조 에러가 발생한다.   
 따라서 let 키워드로 선언한 변수는 스코프의 시작 지점부터 초기화 단계 시작 지점까지   
 변수를 참조할 수 없는 **일시적 사각지대(Temporal Dead Zone: TDZ)** 구간에 존재한다.
 
@@ -70,8 +74,12 @@ let name = 'John';
 ```
 
 <span style="background-color: #ffdce0;">const</span>는 **선언과 초기화가 동시에 진행**된다.
+초기화가 진행되지 않은 상태이기 때문에 Cannot access 'name' before initialization 에러 문구가 출력된다.
 
 ```javascript
 console.log(name) // output: Uncaught ReferenceError: Cannot access 'name' before initialization
 const name = 'John'
 ```
+
+var 키워드 보다는 let과 const 사용,   
+기본적으로 const 키워드 위주로 사용하고 재할당이 필요한 변수의 경우 let을 사용하는 것이 권장된다.
