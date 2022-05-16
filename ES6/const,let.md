@@ -77,7 +77,8 @@ var로 선언된 변수는 선언 단계와 초기화 단계가 한번에 이루
 console.log(name) // output: Uncaught ReferenceError: name is not defined
 let name = 'John';
 ```
-   
+<br/>   
+
 <span style="background-color: #ffdce0;">const</span>는 선언과 초기화가 동시에 진행된다.   
 아래에서 name은 초기화가 진행되지 않은 상태이기 때문에   
 Cannot access 'name' before initialization 에러 문구가 출력된다.   
