@@ -80,12 +80,13 @@ let name = 'John';
 <br/>
 <span style="background-color: #ffdce0;">const</span>는 선언과 초기화가 동시에 진행된다.   
 아래에서 name은 초기화가 진행되지 않은 상태이기 때문에   
-Cannot access 'name' before initialization 에러 문구가 출력된다.
+Cannot access 'name' before initialization 에러 문구가 출력된다.   
    
 ```javascript
 console.log(name) // output: Uncaught ReferenceError: Cannot access 'name' before initialization
 const name = 'John'
 ```
+   
    
    
 **기본적으로 const 키워드 위주로 사용하고 재할당이 필요한 변수의 경우 let을 사용하는 것이 권장된다.**
