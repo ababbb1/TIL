@@ -73,8 +73,8 @@ console.log(name) // output: Uncaught ReferenceError: name is not defined
 let name = 'John';
 ```
 
-<span style="background-color: #ffdce0;">const</span>는 **선언과 초기화가 동시에 진행**된다.
-초기화가 진행되지 않은 상태이기 때문에 Cannot access 'name' before initialization 에러 문구가 출력된다.
+<span style="background-color: #ffdce0;">const</span>는 **선언과 초기화가 동시에 진행**된다.   
+아래에서 name은 초기화가 진행되지 않은 상태이기 때문에 Cannot access 'name' before initialization 에러 문구가 출력된다.
 
 ```javascript
 console.log(name) // output: Uncaught ReferenceError: Cannot access 'name' before initialization
