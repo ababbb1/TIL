@@ -21,7 +21,7 @@ User.prototype {
 <br/>
 <br/>
 
-User 함수의 prototype 속성이 참조하는 프로토타입 객체는 new라는 연산자와 프로토타입 객체의 constructor인 User 함수를 통해 생성된 모든 객체의 원형이 되는 객체이다.   
+User 함수의 prototype 속성이 참조하는 User.prototype 객체는 new User() 함수를 통해 생성된 모든 객체의 원형이 되는 객체이다.   
 ```javascript
 function User(){};
 
