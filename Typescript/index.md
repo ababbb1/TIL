@@ -23,4 +23,4 @@ tSum(1 + '0') // Error: '0'은 number에 할당될 수 없습니다.
 <br/>
 <br/>
 
-* #### [기본타입](https://github.com/ababbb1/TIL/blob/main/Typescript/%EA%B8%B0%EB%B3%B8%ED%83%80%EC%9E%85.md)
+* ### [기본타입](https://github.com/ababbb1/TIL/blob/main/Typescript/%EA%B8%B0%EB%B3%B8%ED%83%80%EC%9E%85.md)
