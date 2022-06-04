@@ -54,8 +54,6 @@ How to solve a Problem with React?
 * Store(스토어) – Action(액션) – Reducer(리듀서)
 
 ## Store, Action, Reducer의 의미와 특징
-<img src="https://hanamon.kr/wp-content/uploads/2021/07/%E1%84%85%E1%85%B5%E1%84%83%E1%85%A5%E1%86%A8%E1%84%89%E1%85%B3-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A2%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5-%E1%84%83%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A8.png">
-<br/>
 
 ### Store (스토어)
 * Store(스토어)는 상태가 관리되는 오직 하나의 공간이다.
