@@ -139,6 +139,8 @@ npm script를 아래와 같이 변경하여 Babel 대신 Webpack을 실행하도
     "build": "webpack -w"
 }
 ```
+<br/>
+<br/>
 
 ## webpack.config.js
 webpack.config.js은 Webpack이 실행될 때 참조하는 설정 파일이다. 프로젝트 루트에 webpack.config.js 파일을 생성하고 아래와 같이 작성한다.
